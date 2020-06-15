@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.shortcuts import render
+from django.urls import include, path
+
 
 urlpatterns = [
+    url('', include('books.urls')),
     url(r'^admin/', admin.site.urls),
 ]
