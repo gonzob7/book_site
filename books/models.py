@@ -27,3 +27,23 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+
+
+# class Event(models.Model):
+#   ...
+#   #many-to-many with attendees
+#   name = models.CharField(max_length=100)
+#   date = models.DateField()
+#
+# class Attendee(models.Model):
+#   ...
+#   name = models.CharField(max_length=50)
+#   events = models.ManyToManyField(Event)
+#
+# class Ticket(models.Model):
+#   ...
+#   #many-to-one
+#   event = models.ForeignKey(Event, on_delete=models.CASCADE)
+#   ticket_holder = models.ForeignKey(Attendee)
+#   #through
