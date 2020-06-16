@@ -5,6 +5,6 @@
 <br>
 <a"/book/{{ book.id }}">Publish Date: {{ book.date_published }}</a>
 <br>
-<a"/book/{{ book.id }}">Author: {{ book.author }}</a>
+<a"/book/{{ book.id }}">Author: {{ book.author }}, (b. {{book.author.birth_date}})</a>
 <br>
 <a"/book/{{ book.id }}">Tags: {% for book_tag in book.tags.all %} {{book_tag}},{% endfor %}</a>
